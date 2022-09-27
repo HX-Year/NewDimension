@@ -1,0 +1,8 @@
+displayName: "New Dimension"
+name: "new-dimension"
+author: "HX-Year"
+main: "newdimension.NewDimension"
+description: "A Java mod."
+version: 1.0
+minGameVersion: 137
+java: true
