@@ -15,8 +15,6 @@ public class NDItems implements ContentList{
     stone,//石头
     electricCube;//电立方
 
-    public static final Seq<Item> NDPItems = new Seq<>();
-
     /*"explosiveness"爆炸性
     "flammability"燃烧性，在燃烧发电机中这个与发电量成正比例
     "radioactivity"辐射性，在辐射发电机中这个与发电量成正比例
@@ -67,11 +65,5 @@ public class NDItems implements ContentList{
         electricCube = new Item("electric-cube", Color.valueOf("E88665")){{
             charge = 1f;
         }};
-
-        NDPItems.addAll(
-        scrap, copper, lead, graphite, coal, titanium, thorium, silicon, plastanium, phaseFabric, surgeAlloy, sporePod, sand, blastCompound, pyratite, metaglass, tungsten, iron, tungstenSteel, radioactiveSubstances, hypernuclearCondensates, gold, steel, iterativeModule, stone, electricCube
-        );
-
-        erekirOnlyItems.addAll(erekirItems).removeAll(serpuloItems).removeAll(NDPItems);
     }
 }

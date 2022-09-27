@@ -15,9 +15,7 @@ public class NewDimension extends Mod{
         new NDLiquids(),
         new DefenseBlocks(),
         //new CrafterBlocks(),
-        new NDOreBlocks(),
-        new NDOreBlocks(),
-        new NDPPlanets()
+        new NDOreBlocks()
     };
     public NewDimension(){
         Log.info("Loaded NewDimension constructor.");
