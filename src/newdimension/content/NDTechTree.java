@@ -1,4 +1,4 @@
-package newdimension.content;
+/*package newdimension.content;
 
 import arc.struct.*;
 import mindustry.game.Objectives.*;
@@ -19,4 +19,4 @@ public class NDTechTree implements ContentList{
             
         }
     }
-}
+}*/

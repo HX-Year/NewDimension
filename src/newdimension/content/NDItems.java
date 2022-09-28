@@ -49,20 +49,20 @@ public class NDItems implements ContentList{
             cost = 1.6f;
         }};
 
-        steel = new Item("steel", Color.valueOf("")){{
+        steel = new Item("steel", Color.valueOf("E84649")){{
             cost = 1.45f;
         }};
 
-        iterativeModule = new Item("iterative-module", Color.valueOf("E88665")){{
+        iterativeModule = new Item("iterative-module", Color.valueOf("E88345")){{
             cost = 1.5f;
         }};
 
-        stone = new Item("stone", Color.valueOf("E88665")){{
+        stone = new Item("stone", Color.valueOf("E85665")){{
             hardness = 0;
             cost = 1.12f;
         }};
 
-        electricCube = new Item("electric-cube", Color.valueOf("E88665")){{
+        electricCube = new Item("electric-cube", Color.valueOf("E75665")){{
             charge = 1f;
         }};
     }
