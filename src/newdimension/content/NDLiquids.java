@@ -1,11 +1,12 @@
 package newdimension.content;
 
 import arc.graphics.*;
-import mindustry.type.Liquid;
+import mindustry.type.*;
 
 public class NDLiquids implements ContentList{
     public static Liquid nuclearWastewater,//核废水
-    lava;//岩浆
+    lava,//岩浆
+    superFrozenLiquid;//超冻液
 
     /*"explosiveness"爆炸性，石油=1.2f
     "flammability"燃烧性，石油=1.2f
@@ -26,6 +27,12 @@ public class NDLiquids implements ContentList{
             temperature = 22f;
             viscosity = 1f;
             //effect = StatusEffects.;
+        }};
+
+        superFrozenLiquid = new Liquid("super-fronze-liquid", Color.valueOf("365D99")){{
+            temperature = 0.02f;
+            heatCapacity = 1.6f;
+            viscosity = 0.5f;
         }};
     }
 }

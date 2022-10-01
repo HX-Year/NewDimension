@@ -14,7 +14,7 @@ public class NewDimension extends Mod{
         new NDItems(),
         new NDLiquids(),
         new DefenseBlocks(),
-        //new CrafterBlocks(),
+        new CrafterBlocks(),
         new NDOreBlocks()
     };
     public NewDimension(){
