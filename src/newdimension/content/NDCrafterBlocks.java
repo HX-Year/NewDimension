@@ -5,7 +5,7 @@ import mindustry.world.blocks.production.*;
 import mindustry.content.Items;
 import mindustry.type.*;
 
-public class CrafterBlocks implements ContentList{
+public class NDCrafterBlocks implements ContentList{
     
     public static Block steelFactory,
     electricCubeFactory,
