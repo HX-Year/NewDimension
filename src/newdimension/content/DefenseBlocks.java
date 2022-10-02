@@ -15,18 +15,6 @@ public class DefenseBlocks implements ContentList{
 
     @Override
     public void load(){
-        tungstenSteelWall = new Wall("tungsten-steel-wall"){{
-            requirements(Category.defense, ItemStack.with(NDItems.tungstenSteel, 20));
-            health = 5000;
-            size = 1;
-        }};
-
-        tungstenSteelWallLarge = new Wall("tungsten-steel-wall-large"){{
-            requirements(Category.defense, ItemStack.with(NDItems.tungstenSteel, 60));
-            health = 12000;
-            size = 2;
-        }};
-
         ironWall = new Wall("iron-wall"){{
             requirements(Category.defense, ItemStack.with(NDItems.iron, 10));
             health = 2000;

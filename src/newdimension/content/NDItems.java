@@ -6,7 +6,6 @@ import mindustry.type.*;
 
 public class NDItems implements ContentList{
     public static Item iron,//铁
-    tungstenSteel,//钨钢
     radioactiveSubstances,//放射物
     hypernuclearCondensates,//超核凝聚物
     gold,//黄金
@@ -28,11 +27,6 @@ public class NDItems implements ContentList{
         iron = new Item("iron", Color.valueOf("D8DADF")){{
             hardness = 2;
             cost = 1.3f;
-        }};
-
-        tungstenSteel = new Item("tungsten-steel", Color.valueOf("666A72")){{
-            charge = 0.2f;
-            cost = 1.5f;
         }};
 
         radioactiveSubstances = new Item("radioactive-substances", Color.valueOf("999C77")){{
