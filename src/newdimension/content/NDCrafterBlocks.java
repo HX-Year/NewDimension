@@ -21,8 +21,8 @@ public class NDCrafterBlocks implements ContentList{
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
-            consumes.item(NDItems.iron, 1);
-            consumes.power(2f);
+            consumeItem(NDItems.iron, 1);
+            consumePower(2f);
             outputItem = new ItemStack(NDItems.steel, 1);
         }};
 
@@ -34,7 +34,7 @@ public class NDCrafterBlocks implements ContentList{
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
-            consumes.power(6.5f);
+            consumePower(6.5f);
             outputItem = new ItemStack(NDItems.electricCube, 2);
         }};
 
@@ -46,11 +46,11 @@ public class NDCrafterBlocks implements ContentList{
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
-            consumes.items(
+            consumeItems(
                 new ItemStack(Items.surgeAlloy, 1),
                 new ItemStack(Items.thorium, 2)
             );
-            consumes.power(7f);
+            consumePower(7f);
             outputItem = new ItemStack(NDItems.hypernuclearCondensates, 2);
         }};
     }
