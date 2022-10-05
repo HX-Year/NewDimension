@@ -1,6 +1,8 @@
 package newdimension.content;
 
 import arc.graphics.*;
+import mindustry.content.StatusEffects;
+import mindustry.gen.EffectState;
 import mindustry.type.*;
 
 public class NDLiquids implements ContentList{
@@ -33,6 +35,7 @@ public class NDLiquids implements ContentList{
             temperature = 0.02f;
             heatCapacity = 1.6f;
             viscosity = 0.5f;
+            effect = StatusEffects.freezing;
         }};
     }
 }

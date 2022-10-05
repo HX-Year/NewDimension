@@ -1,10 +1,12 @@
 package newdimension.content;
 
 import arc.graphics.*;
-import arc.struct.*;
+//import arc.struct.*;
+//import mindustry.content.*;
 import mindustry.type.*;
 
 public class NDItems implements ContentList{
+
     public static Item iron,//铁
     radioactiveSubstances,//放射物
     hypernuclearCondensates,//超核凝聚物
@@ -12,7 +14,8 @@ public class NDItems implements ContentList{
     steel,//钢
     iterativeModule,//迭代模块
     stone,//石头
-    electricCube;//电立方
+    electricCube,//电立方
+    tungstenSteel;//钨钢
 
     /*"explosiveness"爆炸性
     "flammability"燃烧性，在燃烧发电机中这个与发电量成正比例
@@ -21,6 +24,8 @@ public class NDItems implements ContentList{
     "hardness"挖掘等级
     "cost"用作建筑材料是消耗时间倍率 时间公式：各个材料需求数量乘此倍率后相加再除以60就是所需时间
     */
+
+    //public static final Seq<NDItems> ndItems = new Seq<>(), ndOnlyItems = new Seq<>();
 
     @Override
     public void load(){
@@ -59,5 +64,17 @@ public class NDItems implements ContentList{
         electricCube = new Item("electric-cube", Color.valueOf("E75665")){{
             charge = 1f;
         }};
+
+        tungstenSteel = new Item("tungsten-steel", Color.valueOf("666A72")){{
+            charge = 0.2f;
+            cost = 1.2f;
+        }};
+
+        /*ndItems.addAll(
+            iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
+            steel, iterativeModule, stone, electricCube
+        );*/
+
+        //ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);
     }
 }
