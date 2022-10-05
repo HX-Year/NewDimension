@@ -61,7 +61,7 @@ public class NDCrafterBlocks implements ContentList{
         tungstenSteelFactory = new GenericCrafter("tungsten-steel-factory"){{
             requirements(Category.crafting, ItemStack.with(
                 NDItems.steel, 20,
-                Items.silicon
+                Items.silicon, 10
             ));
             size = 3;
             health = 2400;
