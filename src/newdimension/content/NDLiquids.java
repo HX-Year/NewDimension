@@ -19,7 +19,7 @@ public class NDLiquids implements ContentList{
 
     @Override
     public void load(){
-        nuclearWastewater = new Liquid("nuclear-wastewater", Color.valueOf("8ECC47")){{
+        nuclearWastewater = new CellLiquid("nuclear-wastewater", Color.valueOf("8ECC47")){{
             heatCapacity = 0.4f;
             viscosity = 0.5f;
             moveThroughBlocks = true;
@@ -28,6 +28,8 @@ public class NDLiquids implements ContentList{
         lava = new Liquid("lava", Color.valueOf("E88665")){{
             temperature = 22f;
             viscosity = 1f;
+            coolant = false;
+            incinerable = false;
             //effect = StatusEffects.;
         }};
 
