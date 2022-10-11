@@ -5,8 +5,10 @@ import mindustry.world.blocks.environment.OreBlock;
 
 public class NDOreBlocks implements ContentList{
 
-    public static OreBlock oreIron;
-    public static OreBlock oreGold;
+    public static OreBlock oreIron,
+    oreGold,
+    oreAluminium;
+
 
     /*该矿石是否默认生成在地图中
     public boolean oreDefault = false;
@@ -27,6 +29,12 @@ public class NDOreBlocks implements ContentList{
             oreDefault = true;
             oreThreshold = 0.256f;
             oreScale = 16.34947f;
+        }};
+
+        oreAluminium = new OreBlock("ore-aluminium", NDItems.aluminium){{
+            oreDefault = true;
+            oreThreshold = 0.657f;
+            oreScale = 20.56794f;
         }};
     }
 }

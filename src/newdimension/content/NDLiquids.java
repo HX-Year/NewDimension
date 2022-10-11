@@ -2,7 +2,6 @@ package newdimension.content;
 
 import arc.graphics.*;
 import mindustry.content.StatusEffects;
-import mindustry.gen.EffectState;
 import mindustry.type.*;
 
 public class NDLiquids implements ContentList{
@@ -23,6 +22,7 @@ public class NDLiquids implements ContentList{
         nuclearWastewater = new Liquid("nuclear-wastewater", Color.valueOf("8ECC47")){{
             heatCapacity = 0.4f;
             viscosity = 0.5f;
+            moveThroughBlocks = true;
         }};
 
         lava = new Liquid("lava", Color.valueOf("E88665")){{

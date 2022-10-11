@@ -17,8 +17,8 @@ public class NDCrafterBlocks implements ContentList{
         steelFactory = new GenericCrafter("steel-factory"){{
             requirements(Category.crafting, ItemStack.with(NDItems.iron, 30));
             size = 2;
-            health = 1200;
-            craftTime = 60f;
+            health = 800;
+            craftTime = 50f;
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
@@ -30,8 +30,8 @@ public class NDCrafterBlocks implements ContentList{
         electricCubeFactory = new GenericCrafter("electric-cube-factory"){{
             requirements(Category.crafting, ItemStack.with(NDItems.steel, 30));
             size = 2;
-            health = 1600;
-            craftTime = 120f;
+            health = 1000;
+            craftTime = 80f;
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
@@ -45,8 +45,8 @@ public class NDCrafterBlocks implements ContentList{
                 NDItems.iron, 30
             ));
             size = 3;
-            health = 2000;
-            craftTime = 120f;
+            health = 1500;
+            craftTime = 85f;
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
@@ -64,8 +64,8 @@ public class NDCrafterBlocks implements ContentList{
                 Items.silicon, 10
             ));
             size = 3;
-            health = 2400;
-            craftTime = 90f;
+            health = 1850;
+            craftTime = 75f;
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;

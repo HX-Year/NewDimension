@@ -7,9 +7,9 @@ import newdimension.content.*;
 public class NewDimension extends Mod{
     public static String ModName = "new-dimension";
     public static final ContentList[] modContents = new ContentList[]{
-        //new NDPlanets(),
         new NDItems(),
         new NDLiquids(),
+        new NDPlanets(),
         new NDDefenseBlocks(),
         new NDCrafterBlocks(),
         new NDPowerBlocks(),

@@ -1,8 +1,8 @@
 package newdimension.content;
 
 import arc.graphics.*;
-//import arc.struct.*;
-//import mindustry.content.*;
+import arc.struct.*;
+import mindustry.content.*;
 import mindustry.type.*;
 
 public class NDItems implements ContentList{
@@ -15,7 +15,8 @@ public class NDItems implements ContentList{
     iterativeModule,//迭代模块
     stone,//石头
     electricCube,//电立方
-    tungstenSteel;//钨钢
+    tungstenSteel,//钨钢
+    aluminium;//铝
 
     /*"explosiveness"爆炸性
     "flammability"燃烧性，在燃烧发电机中这个与发电量成正比例
@@ -25,7 +26,7 @@ public class NDItems implements ContentList{
     "cost"用作建筑材料是消耗时间倍率 时间公式：各个材料需求数量乘此倍率后相加再除以60就是所需时间
     */
 
-    //public static final Seq<NDItems> ndItems = new Seq<>(), ndOnlyItems = new Seq<>();
+    public static final Seq<Item> ndItems = new Seq<>(), ndOnlyItems = new Seq<>();
 
     @Override
     public void load(){
@@ -70,11 +71,16 @@ public class NDItems implements ContentList{
             cost = 1.2f;
         }};
 
-        /*ndItems.addAll(
-            iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
-            steel, iterativeModule, stone, electricCube
-        );*/
+        aluminium = new Item("aluminium", Color.valueOf("F65782")){{
+            cost = 1f;
+            hardness = 1;
+        }};
 
-        //ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);
+        ndItems.addAll(
+            iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
+            steel, iterativeModule, stone, electricCube, aluminium
+        );
+
+        ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);
     }
 }

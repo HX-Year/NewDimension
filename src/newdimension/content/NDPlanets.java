@@ -1,4 +1,4 @@
-/*package newdimension.content;
+package newdimension.content;
 
 import arc.graphics.*;
 import mindustry.content.*;
@@ -45,4 +45,4 @@ public class NDPlanets implements ContentList{
             hiddenItems.addAll(NDItems.ndItems).removeAll(Items.serpuloItems);
         }};
     }
-}*/
+}
