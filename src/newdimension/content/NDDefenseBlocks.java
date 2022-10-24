@@ -4,8 +4,10 @@ import mindustry.type.Category;
 import mindustry.type.ItemStack;
 import mindustry.world.Block;
 import mindustry.world.blocks.defense.Wall;
+import newdimension.world.blocks.*;
 
 public class NDDefenseBlocks implements ContentList{
+
     public static Block tungstenSteelWall,
     tungstenSteelWallLarge,
     ironWall,
@@ -13,7 +15,9 @@ public class NDDefenseBlocks implements ContentList{
     goldWall,
     goldWallLarge,
     steelWall,
-    steelWallLarge;
+    steelWallLarge,
+    aluminiumWall,
+    aluminiumWallLarge;
 
     @Override
     public void load(){
@@ -63,6 +67,19 @@ public class NDDefenseBlocks implements ContentList{
             requirements(Category.defense, ItemStack.with(NDItems.steel, 40));
             health = 7500;
             size = 2;
+        }};
+
+        aluminiumWall = new Wall("aluminium-wall"){{
+            requirements(Category.defense, ItemStack.with(NDItems.aluminium, 10));
+            health = 2500;
+            size = 1;
+        }};
+
+        aluminiumWallLarge = new NDWall("aluminium-wall-large"){{
+            requirements(Category.defense, ItemStack.with(NDItems.aluminium, 40));
+            health = 6000;
+            size = 2;
+            sharingHealth = true;
         }};
     }
 }

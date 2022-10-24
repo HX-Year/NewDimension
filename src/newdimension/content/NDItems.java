@@ -13,7 +13,6 @@ public class NDItems implements ContentList{
     gold,//黄金
     steel,//钢
     iterativeModule,//迭代模块
-    stone,//石头
     electricCube,//电立方
     tungstenSteel,//钨钢
     aluminium;//铝
@@ -57,11 +56,6 @@ public class NDItems implements ContentList{
             cost = 1.5f;
         }};
 
-        stone = new Item("stone", Color.valueOf("E85665")){{
-            hardness = 0;
-            cost = 1.12f;
-        }};
-
         electricCube = new Item("electric-cube", Color.valueOf("E75665")){{
             charge = 1f;
         }};
@@ -78,7 +72,7 @@ public class NDItems implements ContentList{
 
         ndItems.addAll(
             iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
-            steel, iterativeModule, stone, electricCube, aluminium
+            steel, iterativeModule, electricCube, aluminium
         );
 
         ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);
