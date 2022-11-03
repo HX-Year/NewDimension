@@ -5,4 +5,5 @@ main: "newdimension.NewDimension"
 description: "A Java mod."
 version: 1.0
 minGameVersion: 137
+hideBrowser: true
 java: true
