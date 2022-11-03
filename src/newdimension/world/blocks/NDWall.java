@@ -7,10 +7,11 @@ import newdimension.components.*;
 public class NDWall extends Wall{
     
     public ArrayList<ComponentBase<NDWallBuild>> components = new ArrayList<>();
-    public boolean sharingHealth = false;
+    public boolean sharingHealth;
 
     public NDWall(String name){
         super(name);
+        sharingHealth = false;
     }
 
     public class NDWallBuild extends WallBuild{

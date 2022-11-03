@@ -28,7 +28,7 @@ public class NDLiquids implements ContentList{
         }};
 
         lava = new Liquid("lava", Color.valueOf("E88665")){{
-            temperature = 2f;
+            temperature = 0.2f;
             viscosity = 1f;
             coolant = false;
             incinerable = false;

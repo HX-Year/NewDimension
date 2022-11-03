@@ -11,7 +11,7 @@ public class NDCoreBlocks implements ContentList{
     @Override
     public void load(){
         NDcore = new CoreBlock("ND-core"){{
-            requirements(Category.effect, buildVisibility.editorOnly, ItemStack.with(
+            requirements(Category.effect, ItemStack.with(
                 NDItems.steel, 1000,
                 NDItems.aluminium, 200
             ));

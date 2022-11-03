@@ -64,7 +64,7 @@ public class NDCrafterBlocks implements ContentList{
                 Items.silicon, 10
             ));
             size = 3;
-            health = 1850;
+            health = 1500;
             craftTime = 75f;
             hasItems = true;
             hasPower = true;
