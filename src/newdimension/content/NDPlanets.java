@@ -53,7 +53,6 @@ public class NDPlanets implements ContentList{
                 r.attributes.clear();
                 r.showSpawns = false;
             };
-            iconColor = Color.valueOf("7d4dff");
             atmosphereColor = Color.valueOf("3c1b8f");
             atmosphereRadIn = 0.02f;
             atmosphereRadOut = 0.3f;
