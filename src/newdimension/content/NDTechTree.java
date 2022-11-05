@@ -6,6 +6,7 @@ import static newdimension.content.NDCrafterBlocks.*;
 import static newdimension.content.NDDefenseBlocks.*;
 import static newdimension.content.NDPowerBlocks.*;
 import static newdimension.content.NDCoreBlocks.*;
+import static newdimension.content.NDTurrets.*;
 
 public class NDTechTree implements ContentList{
     @Override
@@ -63,6 +64,10 @@ public class NDTechTree implements ContentList{
 
                 node(batteryStack, () -> {
                     node(batteryStackLarge, () -> {});
+                });
+
+                node(ndturret, () -> {
+                    node(ndturret1, () -> {});
                 });
             });
         }
