@@ -30,6 +30,7 @@ public class NDTurrets implements ContentList{
                     ammoMultiplier = 2;
                 }}
             );
+            size = 4;
             hasPower = true;
             consumePower(5f);
             shoot = new ShootAlternate(3.5f);
@@ -60,6 +61,7 @@ public class NDTurrets implements ContentList{
                     ammoMultiplier = 2f;
                 }}
             );
+            size = 6;
             hasPower = true;
             consumePower(12f);
             consumeLiquid(NDLiquids.superFrozenLiquid, 100f);
