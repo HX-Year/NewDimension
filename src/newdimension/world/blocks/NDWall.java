@@ -2,7 +2,7 @@ package newdimension.world.blocks;
 
 import java.util.*;
 import mindustry.world.blocks.defense.*;
-import newdimension.components.*;
+import newdimension.world.components.ComponentBase;
 
 public class NDWall extends Wall{
     

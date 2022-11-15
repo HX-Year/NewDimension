@@ -1,9 +1,10 @@
-package newdimension.components;
+package newdimension.world.components;
 
 import mindustry.gen.*;
 import newdimension.world.blocks.*;
+import newdimension.world.components.ComponentBase;
 
-public class SharingHealth extends ComponentBase<NDWall.NDWallBuild>{
+public class SharingHealth extends ComponentBase<NDWall.NDWallBuild> {
     
     @Override
     public void onUpdate(NDWall.NDWallBuild nd){

@@ -1,4 +1,4 @@
-package newdimension.components;
+package newdimension.world.components;
 
 import mindustry.gen.*;
 

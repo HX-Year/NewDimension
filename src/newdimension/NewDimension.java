@@ -34,6 +34,6 @@ public class NewDimension extends Mod{
         Log.info("Loading some newdimension content.");
         for (ContentList ndlist : NewDimension.modContents){
             ndlist.load();
-        };
+        }
     }
 }

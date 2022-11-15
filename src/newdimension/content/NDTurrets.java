@@ -10,12 +10,13 @@ import mindustry.type.*;
 
 public class NDTurrets implements ContentList{
     
-    public static Block ndturret,//毁残
-    ndturret1;//超导电磁炮
+    public static Block huiCan,//毁残
+    superconductingElectromagneticGun,//超导电磁炮
+    frost;//霜冻
 
     @Override
     public void load(){
-        ndturret = new ItemTurret("ndturret"){{
+        huiCan = new ItemTurret("hui-can"){{
             requirements(Category.turret, ItemStack.with(
                 Items.lead, 500,
                 NDItems.tungstenSteel, 2000,
@@ -46,7 +47,7 @@ public class NDTurrets implements ContentList{
             limitRange();
         }};
 
-        ndturret1 = new ItemTurret("ndturret1"){{
+        superconductingElectromagneticGun = new ItemTurret("superconducting-electromagnetic-gun"){{
             requirements(Category.turret, ItemStack.with(
                 Items.lead, 1000,
                 Items.silicon, 1600,
@@ -76,6 +77,12 @@ public class NDTurrets implements ContentList{
             rotateSpeed = 10f;
             coolant = consumeCoolant(0.1f);
             limitRange();
+        }};
+
+        frost = new Turret("frost"){{
+            requirements(Category.turret, ItemStack.with(
+                    NDItems.tungstenSteel, 500
+            ));
         }};
     }
 }
