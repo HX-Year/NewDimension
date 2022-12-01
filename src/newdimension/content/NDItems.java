@@ -71,7 +71,7 @@ public class NDItems implements ContentList{
             hardness = 1;
         }};
 
-        refactoringModule = new Item("refactoring-module", Color.valueOf("")){{
+        refactoringModule = new Item("refactoring-module", Color.valueOf("F65782")){{
             cost = 1f;
         }};
 
