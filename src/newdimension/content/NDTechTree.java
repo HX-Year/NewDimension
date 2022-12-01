@@ -39,7 +39,9 @@ public class NDTechTree implements ContentList{
                             nodeProduce(NDItems.radioactiveSubstances, () -> {
                                 nodeProduce(NDItems.hypernuclearCondensates, () -> {});
                             });
-                            nodeProduce(NDItems.electricCube, () -> {});
+                            nodeProduce(NDItems.electricCube, () -> {
+                                nodeProduce(NDItems.refactoringModule, () -> {});
+                            });
                             nodeProduce(NDItems.iterativeModule, () -> {});
                         });
                     });
@@ -55,9 +57,9 @@ public class NDTechTree implements ContentList{
                 });
 
                 node(steelFactory, () -> {
-                    node(tungstenSteelFactory, () -> {
-                        node(electricCubeFactory, () -> {
-                            node(hypernuclearCondensatesFactory, () -> {});
+                    node(tungstenSteelSmelter, () -> {
+                        node(electricCubeBaler, () -> {
+                            node(superNuclearMachine, () -> {});
                         });
                     });
                 });
@@ -66,8 +68,9 @@ public class NDTechTree implements ContentList{
                     node(batteryStackLarge, () -> {});
                 });
 
-                node(ndturret, () -> {
-                    node(ndturret1, () -> {});
+                node(huiCan, () -> {
+                    node(superconductingElectromagneticGun, () -> {});
+                    node(frost, () -> {});
                 });
             });
         }

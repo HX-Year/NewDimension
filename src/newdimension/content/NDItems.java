@@ -15,7 +15,8 @@ public class NDItems implements ContentList{
     iterativeModule,//迭代模块
     electricCube,//电立方
     tungstenSteel,//钨钢
-    aluminium;//铝
+    aluminium,//铝
+    refactoringModule;//重构模块
 
     /*"explosiveness"爆炸性
     "flammability"燃烧性，在燃烧发电机中这个与发电量成正比例
@@ -70,9 +71,13 @@ public class NDItems implements ContentList{
             hardness = 1;
         }};
 
+        refactoringModule = new Item("refactoring-module", Color.valueOf("")){{
+            cost = 1f;
+        }};
+
         ndItems.addAll(
             iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
-            steel, iterativeModule, electricCube, aluminium
+            steel, iterativeModule, electricCube, aluminium, refactoringModule
         );
 
         ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);

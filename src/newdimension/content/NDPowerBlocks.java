@@ -3,14 +3,16 @@ package newdimension.content;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.power.*;
-
 import mindustry.content.*;
+
+import static mindustry.type.ItemStack.with;
 
 public class NDPowerBlocks implements ContentList{
 
     public static Block batteryStack,//电池堆
     batteryStackLarge,//大型电池堆
-    powerHealNode;//电力恢复节点
+    powerHealNode,//电力恢复节点
+    ndPowerNode;//nd电力节点
 
     @Override
     public void load(){
@@ -44,5 +46,12 @@ public class NDPowerBlocks implements ContentList{
             laserRange = 6f;
             maxNodes = 10;
         }};*/
+
+        ndPowerNode = new PowerNode("ndpowernode"){{
+            requirements(Category.power, with(Items.titanium, 5, Items.lead, 10, Items.silicon, 3));
+            size = 2;
+            maxNodes = 15;
+            laserRange = 15f;
+        }};
     }
 }

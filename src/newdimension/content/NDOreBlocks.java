@@ -1,6 +1,5 @@
 package newdimension.content;
 
-//import mindustry.world.blocks.environment.Floor;
 import mindustry.world.blocks.environment.OreBlock;
 
 public class NDOreBlocks implements ContentList{
@@ -27,14 +26,14 @@ public class NDOreBlocks implements ContentList{
 
         oreGold = new OreBlock("ore-gold", NDItems.gold){{
             oreDefault = true;
-            oreThreshold = 0.256f;
-            oreScale = 16.34947f;
+            oreThreshold = 0.879f;
+            oreScale = 25.67389f;
         }};
 
         oreAluminium = new OreBlock("ore-aluminium", NDItems.aluminium){{
             oreDefault = true;
-            oreThreshold = 0.657f;
-            oreScale = 20.56794f;
+            oreThreshold = 0.843f;
+            oreScale = 24.56281f;
         }};
     }
 }

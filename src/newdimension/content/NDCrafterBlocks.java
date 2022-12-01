@@ -7,10 +7,10 @@ import mindustry.type.*;
 
 public class NDCrafterBlocks implements ContentList{
     
-    public static Block steelFactory,
-    electricCubeFactory,
-    hypernuclearCondensatesFactory,
-    tungstenSteelFactory;
+    public static Block steelFactory,//钢厂
+    electricCubeBaler,//电立方打包机
+    superNuclearMachine,//超核机
+    tungstenSteelSmelter;//钨钢冶炼厂
 
     @Override
     public void load(){
@@ -27,7 +27,7 @@ public class NDCrafterBlocks implements ContentList{
             outputItem = new ItemStack(NDItems.steel, 1);
         }};
 
-        electricCubeFactory = new GenericCrafter("electric-cube-factory"){{
+        electricCubeBaler = new GenericCrafter("electric-cube-baler"){{
             requirements(Category.crafting, ItemStack.with(NDItems.steel, 30));
             size = 2;
             health = 1000;
@@ -39,7 +39,7 @@ public class NDCrafterBlocks implements ContentList{
             outputItem = new ItemStack(NDItems.electricCube, 2);
         }};
 
-        hypernuclearCondensatesFactory = new GenericCrafter("hypernuclear-condensates-factory"){{
+        superNuclearMachine = new GenericCrafter("super-nuclear-machine"){{
             requirements(Category.crafting, ItemStack.with(
                 NDItems.steel, 20,
                 NDItems.iron, 30
@@ -58,7 +58,7 @@ public class NDCrafterBlocks implements ContentList{
             outputItem = new ItemStack(NDItems.hypernuclearCondensates, 2);
         }};
 
-        tungstenSteelFactory = new GenericCrafter("tungsten-steel-factory"){{
+        tungstenSteelSmelter = new GenericCrafter("tungsten-steel-smelter"){{
             requirements(Category.crafting, ItemStack.with(
                 NDItems.steel, 20,
                 Items.silicon, 10

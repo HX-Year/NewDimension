@@ -1,18 +1,18 @@
 package newdimension.content;
 
-import arc.scene.style.BaseDrawable;
 import mindustry.content.*;
 import mindustry.entities.pattern.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.turrets.*;
-import mindustry.entities.bullet.BasicBulletType;
+import mindustry.entities.bullet.*;
 import mindustry.type.*;
 
 public class NDTurrets implements ContentList{
     
     public static Block huiCan,//毁残
     superconductingElectromagneticGun,//超导电磁炮
-    frost;//霜冻
+    frost,//霜冻
+    emberFire;//烬火
 
     @Override
     public void load(){
@@ -28,18 +28,18 @@ public class NDTurrets implements ContentList{
                     width = 7f;
                     height = 9f;
                     lifetime = 10f;
-                    ammoMultiplier = 2;
+                    ammoMultiplier = 4;
                 }}
             );
             size = 4;
             hasPower = true;
             consumePower(5f);
-            shoot = new ShootAlternate(3.5f);
+            shoot = new ShootAlternate(0.5f);
             shootY = 3f;
             reload = 20f;
             range = 220;
-            shootCone = 60f;
-            ammoUseEffect = Fx.casing1;
+            shootCone = 10f;
+            ammoUseEffect = Fx.none;
             health = 3000;
             inaccuracy = 2f;
             rotateSpeed = 10f;
@@ -59,7 +59,7 @@ public class NDTurrets implements ContentList{
                     width = 8f;
                     height = 10f;
                     lifetime = 1800f;
-                    ammoMultiplier = 2f;
+                    ammoMultiplier = 1f;
                 }}
             );
             size = 6;
@@ -82,6 +82,12 @@ public class NDTurrets implements ContentList{
         frost = new Turret("frost"){{
             requirements(Category.turret, ItemStack.with(
                     NDItems.tungstenSteel, 500
+            ));
+        }};
+
+        emberFire = new LiquidTurret("ember-fire"){{
+            requirements(Category.turret, ItemStack.with(
+                    NDItems.tungstenSteel, 2000
             ));
         }};
     }
