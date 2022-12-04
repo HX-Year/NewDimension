@@ -1,4 +1,4 @@
-package newdimension.world.gen;
+/*package newdimension.world.gen;
 
 import arc.graphics.Color;
 import arc.math.geom.Vec3;
@@ -16,4 +16,4 @@ public class NDPlanetGenerator extends PlanetGenerator {
     public Color getColor(Vec3 position){
         return null;
     }
-}
+}*/

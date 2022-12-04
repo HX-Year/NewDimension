@@ -1,11 +1,9 @@
-package newdimension.content;
+/*package newdimension.content;
 
 import arc.graphics.*;
 import mindustry.content.*;
 import mindustry.game.*;
-import mindustry.graphics.*;
 import mindustry.graphics.g3d.*;
-import mindustry.maps.planet.ErekirPlanetGenerator;
 import mindustry.type.*;
 import mindustry.world.meta.Attribute;
 import mindustry.world.meta.Env;
@@ -32,8 +30,9 @@ public class NDPlanets implements ContentList{
                 Color.valueOf("ffe371"),
                 Color.valueOf("f4ee8e")
             );
-        }};*/
-        ND = new Planet("ND", Planets.sun, 2f, 3){{
+        }};
+
+       ND = new Planet("ND", Planets.sun, 2f, 3){{
             generator = new NDPlanetGenerator();
             meshLoader = () -> new HexMesh(this, 5);
             cloudMeshLoader = () -> new MultiMesh(
@@ -74,4 +73,4 @@ public class NDPlanets implements ContentList{
             unlockedOnLand.add(NDCoreBlocks.NDcore);
         }};
     }
-}
+}*/
