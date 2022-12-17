@@ -11,6 +11,7 @@ public class NDWall extends Wall{
 
     public NDWall(String name){
         super(name);
+        update = true;
     }
 
     public class NDWallBuild extends WallBuild{

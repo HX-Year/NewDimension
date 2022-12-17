@@ -34,7 +34,7 @@ public class NDDefenseBlocks implements ContentList{
             components.add(selfHealing);
         }};
 
-        nanoAlloyWallLarge = new NDWall("nano-alloy-wall"){{
+        nanoAlloyWallLarge = new NDWall("nano-alloy-wall-large"){{
             requirements(Category.defense, ItemStack.with(NDItems.nanoAlloy, 40));
             health = 3000;
             size = 2;
