@@ -1,17 +1,16 @@
-package newdimension.world.blocks;
+package newdimension.world.blocks.defense;
 
 import java.util.*;
 import mindustry.world.blocks.defense.*;
 import newdimension.world.components.ComponentBase;
+import newdimension.world.components.SelfHealing;
 
 public class NDWall extends Wall{
-    
     public ArrayList<ComponentBase<NDWallBuild>> components = new ArrayList<>();
-    public boolean sharingHealth;
+    public static SelfHealing selfHealing = new SelfHealing();
 
     public NDWall(String name){
         super(name);
-        sharingHealth = false;
     }
 
     public class NDWallBuild extends WallBuild{

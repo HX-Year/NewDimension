@@ -16,7 +16,8 @@ public class NDItems implements ContentList{
     electricCube,//电立方
     tungstenSteel,//钨钢
     aluminium,//铝
-    refactoringModule;//重构模块
+    refactoringModule,//重构模块
+    nanoAlloy;//纳米合金
 
     /*"explosiveness"爆炸性
     "flammability"燃烧性，在燃烧发电机中这个与发电量成正比例
@@ -75,9 +76,14 @@ public class NDItems implements ContentList{
             cost = 1f;
         }};
 
+        nanoAlloy = new Item("nano-alloy", Color.valueOf("F65287")){{
+            cost = 1.2f;
+        }};
+
         ndItems.addAll(
             iron, radioactiveSubstances, hypernuclearCondensates, gold,//黄金
-            steel, iterativeModule, electricCube, aluminium, refactoringModule
+            steel, iterativeModule, electricCube, aluminium, refactoringModule,
+            nanoAlloy
         );
 
         ndOnlyItems.addAll(ndItems).removeAll(Items.serpuloItems);

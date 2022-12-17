@@ -8,14 +8,6 @@ public class NDOreBlocks implements ContentList{
     oreGold,
     oreAluminium;
 
-
-    /*该矿石是否默认生成在地图中
-    public boolean oreDefault = false;
-        矿石生成参数
-    public float oreScale = 24f, oreThreshold = 0.828f;
-                  规模           矿石阈值
-    */
-
     @Override
     public void load(){
         oreIron = new OreBlock("ore-iron", NDItems.iron){{
