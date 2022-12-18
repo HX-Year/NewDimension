@@ -1,9 +1,10 @@
 package newdimension.content;
 
-import mindustry.world.*;
-import mindustry.world.blocks.production.*;
 import mindustry.content.Items;
-import mindustry.type.*;
+import mindustry.type.Category;
+import mindustry.type.ItemStack;
+import mindustry.world.Block;
+import mindustry.world.blocks.production.GenericCrafter;
 
 public class NDCrafterBlocks implements ContentList{
     

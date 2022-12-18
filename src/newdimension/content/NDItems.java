@@ -1,9 +1,9 @@
 package newdimension.content;
 
-import arc.graphics.*;
-import arc.struct.*;
-import mindustry.content.*;
-import mindustry.type.*;
+import arc.graphics.Color;
+import arc.struct.Seq;
+import mindustry.content.Items;
+import mindustry.type.Item;
 
 public class NDItems implements ContentList{
 
@@ -40,7 +40,7 @@ public class NDItems implements ContentList{
             radioactivity = 1f;
         }};
 
-        hypernuclearCondensates = new Item("hypernuclear-condensates", Color.valueOf("E88774")){{
+        hypernuclearCondensates = new Item("hyper-nuclear-condensates", Color.valueOf("E88774")){{
             explosiveness = 2f;
             radioactivity = 5f;
         }};
