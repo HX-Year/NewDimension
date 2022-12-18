@@ -1,9 +1,10 @@
 package newdimension.world.blocks.defense;
 
-import java.util.*;
-import mindustry.world.blocks.defense.*;
+import mindustry.world.blocks.defense.Wall;
 import newdimension.world.components.ComponentBase;
 import newdimension.world.components.SelfHealing;
+
+import java.util.ArrayList;
 
 public class NDWall extends Wall{
     public ArrayList<ComponentBase<NDWallBuild>> components = new ArrayList<>();

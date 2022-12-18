@@ -1,6 +1,6 @@
 package newdimension;
 
-import arc.util.*;
+import arc.util.Log;
 import mindustry.mod.Mod;
 import newdimension.content.*;
 

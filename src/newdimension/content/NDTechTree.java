@@ -1,10 +1,14 @@
 package newdimension.content;
 
-import static mindustry.content.Blocks.*;
-import static mindustry.content.TechTree.*;
+import static mindustry.content.Blocks.tungstenWall;
+import static mindustry.content.Blocks.tungstenWallLarge;
+import static mindustry.content.TechTree.node;
+import static mindustry.content.TechTree.nodeProduce;
 import static newdimension.content.NDCrafterBlocks.*;
-import static newdimension.content.NDDefenseBlocks.*;
-import static newdimension.content.NDPowerBlocks.*;
+import static newdimension.content.NDDefenseBlocks.nanoAlloyWall;
+import static newdimension.content.NDDefenseBlocks.nanoAlloyWallLarge;
+import static newdimension.content.NDPowerBlocks.batteryStack;
+import static newdimension.content.NDPowerBlocks.batteryStackLarge;
 import static newdimension.content.NDTurrets.*;
 
 public class NDTechTree implements ContentList{

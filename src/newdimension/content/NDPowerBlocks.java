@@ -1,9 +1,11 @@
 package newdimension.content;
 
-import mindustry.type.*;
-import mindustry.world.*;
-import mindustry.world.blocks.power.*;
-import mindustry.content.*;
+import mindustry.content.Items;
+import mindustry.type.Category;
+import mindustry.type.ItemStack;
+import mindustry.world.Block;
+import mindustry.world.blocks.power.Battery;
+import mindustry.world.blocks.power.PowerNode;
 
 import static mindustry.type.ItemStack.with;
 
@@ -12,7 +14,7 @@ public class NDPowerBlocks implements ContentList{
     public static Block batteryStack,//电池堆
     batteryStackLarge,//大型电池堆
     powerHealNode,//电力恢复节点
-    ndPowerNode;//nd电力节点
+    powerGridNode;//电网节点
 
     @Override
     public void load(){
@@ -47,7 +49,7 @@ public class NDPowerBlocks implements ContentList{
             maxNodes = 10;
         }};*/
 
-        ndPowerNode = new PowerNode("ndpowernode"){{
+        powerGridNode = new PowerNode("power-grid-node"){{
             requirements(Category.power, with(Items.titanium, 5, Items.lead, 10, Items.silicon, 3));
             size = 2;
             maxNodes = 15;

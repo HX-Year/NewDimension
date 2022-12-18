@@ -1,11 +1,15 @@
 package newdimension.content;
 
-import mindustry.content.*;
-import mindustry.entities.pattern.*;
-import mindustry.world.*;
-import mindustry.world.blocks.defense.turrets.*;
-import mindustry.entities.bullet.*;
-import mindustry.type.*;
+import mindustry.content.Fx;
+import mindustry.content.Items;
+import mindustry.entities.bullet.BasicBulletType;
+import mindustry.entities.pattern.ShootAlternate;
+import mindustry.type.Category;
+import mindustry.type.ItemStack;
+import mindustry.world.Block;
+import mindustry.world.blocks.defense.turrets.ItemTurret;
+import mindustry.world.blocks.defense.turrets.LiquidTurret;
+import mindustry.world.blocks.defense.turrets.Turret;
 
 public class NDTurrets implements ContentList{
     
