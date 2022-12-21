@@ -8,8 +8,6 @@ import mindustry.world.blocks.power.Battery;
 import mindustry.world.blocks.power.PowerNode;
 import newdimension.world.blocks.power.NDPowerNode;
 
-import static mindustry.type.ItemStack.with;
-
 public class NDPowerBlocks implements ContentList{
 
     public static Block batteryStack,//电池堆

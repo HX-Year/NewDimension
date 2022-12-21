@@ -1,13 +1,14 @@
-/*package newdimension.content;
+package newdimension.content;
 
 import arc.graphics.*;
 import mindustry.content.*;
 import mindustry.game.*;
 import mindustry.graphics.g3d.*;
+import mindustry.maps.planet.SerpuloPlanetGenerator;
 import mindustry.type.*;
 import mindustry.world.meta.Attribute;
 import mindustry.world.meta.Env;
-import newdimension.world.gen.NDPlanetGenerator;
+//import newdimension.world.gen.NDPlanetGenerator;
 
 public class NDPlanets implements ContentList{
 
@@ -30,10 +31,10 @@ public class NDPlanets implements ContentList{
                 Color.valueOf("ffe371"),
                 Color.valueOf("f4ee8e")
             );
-        }};
+        }};*/
 
        ND = new Planet("ND", Planets.sun, 2f, 3){{
-            generator = new NDPlanetGenerator();
+            generator = new SerpuloPlanetGenerator();
             meshLoader = () -> new HexMesh(this, 5);
             cloudMeshLoader = () -> new MultiMesh(
                     new HexSkyMesh(this, 2, 0.15f, 0.14f, 5, Color.valueOf("eba768").a(0.75f), 2, 0.42f, 1f, 0.43f),
@@ -73,4 +74,4 @@ public class NDPlanets implements ContentList{
             unlockedOnLand.add(NDCoreBlocks.NDcore);
         }};
     }
-}*/
+}

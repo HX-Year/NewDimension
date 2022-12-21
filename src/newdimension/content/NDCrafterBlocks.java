@@ -16,7 +16,10 @@ public class NDCrafterBlocks implements ContentList{
     @Override
     public void load(){
         steelFactory = new GenericCrafter("steel-factory"){{
-            requirements(Category.crafting, ItemStack.with(NDItems.iron, 30));
+            requirements(Category.crafting, ItemStack.with(
+                Items.lead, 15,
+                NDItems.iron, 30
+            ));
             size = 2;
             health = 800;
             craftTime = 50f;
@@ -29,19 +32,23 @@ public class NDCrafterBlocks implements ContentList{
         }};
 
         electricCubeBaler = new GenericCrafter("electric-cube-baler"){{
-            requirements(Category.crafting, ItemStack.with(NDItems.steel, 30));
+            requirements(Category.crafting, ItemStack.with(
+                Items.lead, 20,
+                Items.tungsten, 30,
+                NDItems.steel, 30));
             size = 2;
             health = 1000;
             craftTime = 80f;
             hasItems = true;
             hasPower = true;
             itemCapacity = 20;
-            consumePower(6.5f);
+            consumePower(30f);
             outputItem = new ItemStack(NDItems.electricCube, 2);
         }};
 
         superNuclearMachine = new GenericCrafter("super-nuclear-machine"){{
             requirements(Category.crafting, ItemStack.with(
+                Items.tungsten, 30,
                 NDItems.steel, 20,
                 NDItems.iron, 30
             ));
@@ -55,7 +62,7 @@ public class NDCrafterBlocks implements ContentList{
                 new ItemStack(Items.surgeAlloy, 1),
                 new ItemStack(Items.thorium, 2)
             );
-            consumePower(7f);
+            consumePower(45f);
             outputItem = new ItemStack(NDItems.hypernuclearCondensates, 2);
         }};
 
