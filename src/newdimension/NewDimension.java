@@ -10,11 +10,14 @@ public class NewDimension extends Mod{
         new NDItems(),
         new NDLiquids(),
         new NDPlanets(),
+        new NDSectorPresets(),
+        new NDCoreBlocks(),
         new NDTurrets(),
         new NDDefenseBlocks(),
         new NDCrafterBlocks(),
         new NDPowerBlocks(),
-        new NDOreBlocks()
+        new NDOreBlocks(),
+        new NDTechTree()
     };
     public NewDimension(){
         Log.info("Loaded NewDimension constructor.");
